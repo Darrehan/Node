@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Letters</title>
+</head>
+<body>
+  <!-- locals for accesing  locals means it exits in the scope without it application will crash -->
+  <!-- it means its scope exits in the index.ejs file  -->
+  <% if (locals.numberOfLetters) { %>
+    <h1>There are <%= numberOfLetters %> letters in your name 🤷‍♂️🤷😒...</h1>
+    <% } else { %>
+      <h1>Enter your name below 👇</h1>
+      <% } %>
+        <form action="/submit" method="POST">
+          <input type="text" name="fName" placeholder="First name" required>
+          <input type="text" name="lName" placeholder="Last name" required>
+          <input type="submit" value="OK">
+        </form>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "assingment",
+  "version": "1.0.0",
+  "description": "assingment",
+  "main": "index.js",
+  "scripts": {
+    "test": "lucifer",
+    "start": " nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "lucifer"
+  },
+  "keywords": [
+    "lucifer"
+  ],
+  "author": "Dar Rehan Rasool",
+  "license": "ISC"
+}
