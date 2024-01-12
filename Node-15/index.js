@@ -2,7 +2,7 @@
 // inside prompt we are passing java script variable object inside curley braceses.
 import inquirer from 'inquirer';
 import qr from 'qr-image';
-import fs, { fstat, writeFile } from "fs";
+import fs, { fstat} from "fs";
 import { error } from 'console';
 inquirer
   .prompt([

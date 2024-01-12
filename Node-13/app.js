@@ -13,7 +13,7 @@ const shoproutes =require("./routes/shop.js");
 app.use('/admin',adminroutes);
 app.use(shoproutes);
  app.use((req,res,next)=>{
-    // here we are already in the root folder we don't need to write '../' here
+    // here we are already in the root folder we don't need to write '../' it takes us to up a level folder
   res.status(404).sendFile(path.join(__dirname,"views","404-Error.html"));
  });
 //  here i am using the node native http module to create the server by passing the express app as an argument.
