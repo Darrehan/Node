@@ -32,6 +32,7 @@ const server = http.createServer((_req, _res) => {
     readFile("users.txt", "utf8", (error, data) => {
       if (error) throw error;
       console.log(data);
+      
     });
   } else if (url === "/rehan" && method === "POST") {
     _res.write("<h1>hi buddy 😒😒😒😒😒😒</h1>");

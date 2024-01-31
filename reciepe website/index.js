@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 let data;
 
 app.get("/", (req, res) => {
-  res.render("index.ejs", { recipe: data="Rendering Data Buddy for your taco town" });
+  res.render("index.ejs", { recipe: data="Rendering Data Buddy for your Recipe town" });
 });
 
 app.post("/recipe", (req, res) => {

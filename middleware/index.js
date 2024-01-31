@@ -24,7 +24,6 @@ app.use(passwordCheck);
 app.get("/", (_req, _res) => {
   _res.sendFile(__dirname + "/public/index.html");
 });
-
 app.post("/check", (_req, _res) => {
   if (userIsAuthorised) {
     _res.sendFile(__dirname + "/public/secret.html");

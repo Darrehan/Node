@@ -12,7 +12,6 @@ app.get("/about", (_req, _res) => {
 app.get("/contact", (_req, _res) => {
   _res.render("contact.ejs");
 });
-
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
